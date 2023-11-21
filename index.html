@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparky AI</title>
+    <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/js/jquery.pagepiling.css">
+</head>
+
+<body>
+    <main id="pagepiling">
+        <header class="section">
+            <nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center"
+                style="position: absolute; z-index: 99;">
+                <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img src = "./assets/img/logo1.png" style = "width: 50px; margin-top: -10px"/>SparkyBot</a>
+                <button class="bg-transparent px-2 navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#collapsingNavbar3" style="border: unset">
+                    <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Telegram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Uniswap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dextools</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                        <li class="nav-item border-only">
+                            <a class="nav-link" href="https://nova-network.gitbook.io/nova-network-whitepaper">Docs</a>
+                        </li>
+                        <li class="nav-item active  ">
+                            <a class="nav-link" href="#">Join SPARKY AI</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="hero-section" style="position: relative;">
+                <div class="container h-100">
+                    <!-- <video id="background-video" playsinline autoplay loop muted
+                        poster="https://assets.codepen.io/6093409/river.jpg">
+                        <source src="./assets/background.mp4" type="video/mp4">
+                    </video> -->
+                    <img src="./assets/img/hero/left-wave.png" class = "img-fluid" style = "position: absolute; left: 0; top: 0;z-index: 0;" alt="">
+                    <img src="./assets/img/hero/right-wave.png" class = "img-fluid" style = "position: absolute; right: 0; top: 0;z-index: 0;" alt="">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+                        <img src="./assets/img/hero/circle.png" class="img-fluid" alt="">
+                        <div style="position: absolute;">
+                            <div class="hero-top mt-5">
+                                <h1 class="text-center"><img src="./assets/img/logo1.png" class = "img-fluid mr-2" style = "width: 80px; margin-top: -20px" alt="">Sparky<br />
+                                    is your</h1>
+                                    <div class="text">
+                                        <p class ="text-center">
+                                            <span class="word">VoiceActor</span>
+                                            <span class="word">Writer</span>
+                                            <span class="word">Artist</span>
+                                        </p>
+                                    </div>
+                            </div>
+                            <div class="hero-bottom">
+                                <p class="hero-para text-center">Sparky Bt: Telegrams First Free AI Bot Ecosystem</p>
+                                <p class="hero-para text-center"> for Budget-Conscious Users | Designed By Developers
+                                    For Developers</p>
+                                <div class="text-center">
+                                    <button class="hero-btn btn mt-3"><img src="./assets/img/spark.svg"
+                                            style="width: 15px; margin-right: 10px" />Buy SPARKY Bot on DexTools |
+                                        SPARKY</button>
+                                </div>
+                                <p class="hero-para text-center mt-3">Contract: TBA</p>
+                                <div class="hero-cookies mt-5">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="cookie-para-wrapper">
+                                            <p class="cookie-para">This website uses cookies to improve your web
+                                                experience.</p>
+                                        </div>
+                                        <div class="cookie-btn-wrapper">
+                                            <button class="btn  cookies-btn">Accept</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="custom-shape-divider-bottom-1693987528">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <img src="./assets/img/spark.svg" class="spark-img" alt="">
+        </header>
+        <section class="section pp-scrollable">
+            <div class="container">
+                <div>
+                    <div class="about-heading">
+                        <h1 class="text-center">Sparky Bot's</h1>
+                        <h1 class="text-center">complete</h1>
+                        <h1 class="text-center">toolset Sparky Bot</h1>
+                        <p class="text-center about-main-para mt-3">Designed from the foundational level utilizing industry-leading artificial intelligence models</p>
+                    </div>
+                    <div class="about-body mt-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="about-item">
+                                    <div class="d-flex">
+                                        <div class="about-flex-1">
+                                            <div class="p-2 about-img-wrapper"><img src="./assets/img/about/1.svg"
+                                                    class="img-fluid about-img" alt=""></div>
+                                        </div>
+                                        <div class="about-flex-2">
+                                            <h1 class="about-head">AI Writing Tool</h1>
+                                            <p class="about-para">Experience the boundless potential of futuristic
+                                                storytelling through our state-of-the-art AI-driven text generation,
+                                                setting your creativity free to craft narratives like never before.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="about-item">
+                                    <div class="d-flex">
+                                        <div class="about-flex-1">
+                                            <div class="p-2 about-img-wrapper"><img src="./assets/img/about/2.svg"
+                                                    class="img-fluid about-img" alt=""></div>
+                                        </div>
+                                        <div class="about-flex-2">
+                                            <h1 class="about-head">AI Drawing Tool</h1>
+                                            <p class="about-para">Embark on an awe-inspiring visual journey shaped by
+                                                cutting-edge AI artistry. Witness the transformative magic of AI-powered
+                                                masterpieces, redefining your appreciation of creativity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="about-item">
+                                    <div class="d-flex">
+                                        <div class="about-flex-1">
+                                            <div class="p-2 about-img-wrapper"><img src="./assets/img/about/3.svg"
+                                                    class="img-fluid about-img" alt=""></div>
+                                        </div>
+                                        <div class="about-flex-2">
+                                            <h1 class="about-head">AI Text To Speech Tool</h1>
+                                            <p class="about-para">Indulge in the world of lifelike voices meticulously
+                                                crafted through cutting-edge AI sound synthesis, delivering an
+                                                unparalleled auditory experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section pp-scrollable">
+            <div class="container">
+                <div class="artist-wrapper">
+                    <div class="artist-main-wrapper mt-5 pb-5">
+                        <!-- <div class="artist-top-wrapper">
+                            <div class="artist-top d-flex align-items-center justify-content-center">
+                                <h6>AI Artist</h6>
+                            </div>
+                        </div> -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="artist-left h-100">
+                                    <div class="artist-left-top bg-transparent">
+                                        <span class="artist-left-top-head d-flex">
+                                            <span class = "text-white mr-1">ai artist</span> &#8226; <span class = "ml-1">Generate art in seconds</span>
+                                        </span>
+                                    </div>
+                                    <div class="artist-left-bottom">
+                                        <div class="artist-left-bottom-main">
+                                            <h1>SPARKY AI artist</h1>
+                                            <p>By leveraging sophisticated algorithms, our tool not only competes with
+                                                midjourney, DALL-E, and stable diffusion but frequently surpasses them,
+                                                establishing an innovative benchmark in AI-powered artistic excellence.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="artist-right d-flex align-items-center justify-content-center">
+                                    <div>
+                                        <div class="artist-right-img">
+                                            <img src="./assets/img/art/1.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="artist-right-main mt-2">
+                                            <h1 class="text-center">generated by Sparky.ai</h1>
+                                            <p>A beautiful castle on the edge of horizon where holy guardians of earth
+                                                rule, hyper realistic, dream world, castles</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section pp-scrollable">
+            <div class="container">
+                <div class="custom-wrapper">
+                    <div class="custom-top">
+                        <div class="artist-left-top mx-auto custom-tag">
+                            <span class="artist-left-top-head d-flex">
+                               <span class="text-white mr-1">Custom </span> &#8226; Prompts
+                            </span>
+                        </div>
+                        <h1 class="text-center text-white mt-3">
+                            Custom Templates.
+                        </h1>
+                    </div>
+                    <div class="custom-main mt-5">
+                        <div>
+                            <div class="filter d-flex">
+                                <div class="all text-center p-2" data-name='.first' style="flex: 1">
+                                    <div
+                                        class="all-main main-top h-100 w-100 py-1 d-flex align-items-center justify-content-center">
+                                        All
+                                    </div>
+                                </div>
+                                <div class="voice text-center p-2" data-name='.second' style="flex: 1">
+                                    <div
+                                        class="voice-main main-top h-100 w-100 py-1 d-flex align-items-center justify-content-center">
+                                        Voice Over
+                                    </div>
+                                </div>
+                                <div class="articles text-center p-2" data-name='.third' style="flex: 1">
+                                    <div
+                                        class="articles-main main-top h-100 w-100 py-1 d-flex align-items-center justify-content-center">
+                                        Articles
+                                    </div>
+                                </div>
+                                <div class="email text-center p-2" data-name='.fourth' style="flex: 1">
+                                    <div
+                                        class="email-main main-top h-100 w-100 py-1 d-flex align-items-center justify-content-center">
+                                        Assistant
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-5">
+                                <div id="display">
+                                    <div class="row grid">
+                                        <div class="col-lg-4 col-md-6 text-center grid-item first fourth mb-3">
+                                            <div class="custom-item">
+                                                <div class="d-flex">
+                                                    <div class="p-2 custom-img-wrapper"><img
+                                                            src="./assets/img/custom/blog.svg" class="img-fluid custom-img"
+                                                            alt=""></div>
+                                                </div>
+                                                <h1 class="mt-2">Your Personal Assistant</h1>
+                                                <p>Sparky bot: Your versatile personal assistant, tackling tasks from
+                                                    simple to complex</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 text-center grid-item first third mb-3">
+                                            <div class="custom-item">
+                                                <div class="d-flex">
+                                                    <div class="p-2 custom-img-wrapper"><img
+                                                            src="./assets/img/custom/info.svg" class="img-fluid custom-img"
+                                                            alt=""></div>
+                                                </div>
+                                                <h1 class="mt-2">Examination Solver</h1>
+                                                <p>Sparky bot excels in resolving examination questions and completing
+                                                    academic assignments on your behalf</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 text-center grid-item first second mb-3">
+                                            <div class="custom-item">
+                                                <div class="d-flex">
+                                                    <div class="p-2 custom-img-wrapper"><img
+                                                            src="./assets/img/custom/email.svg" class="img-fluid custom-img"
+                                                            alt=""></div>
+                                                </div>
+                                                <h1 class="mt-2">Speech Bot</h1>
+                                                <p>Sparky Bot empowers you to seamlessly convert text into speech,
+                                                    offering a diverse selection of voices to suit your preferences</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section pp-scrollable">
+            <div class="container">
+                <div class="tools-wrapper">
+                    <h1 class="text-center">Incredible tools</h1>
+                    <p class="text-center tools-para">A full AI suite of editors, writers, voice overs, and more</p>
+                    <div class="tools-main mt-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="tools-item">
+                                    <img src="./assets/img/tools/1.png" class="tools-img img-fluid" alt="">
+                                    <div class="tools-item-bottom">
+                                        <h1>Sparky artist</h1>
+                                        <p>An AI bot assisting a child in painting a depiction of Venice on canvas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="tools-item">
+                                    <img src="./assets/img/tools/2.png" class="tools-img img-fluid" alt="">
+                                    <div class="tools-item-bottom">
+                                        <h1>Sparky artist</h1>
+                                        <p>An AI bot playing the role of a lively radio host in a colorful studio, captivating its audience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="tools-item">
+                                    <img src="./assets/img/tools/3.png" class="tools-img img-fluid" alt="">
+                                    <div class="tools-item-bottom">
+                                        <h1>Sparky artist</h1>
+                                        <p>A personal assistant in an office setting, efficiently tackling a backlog of tasks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section pp-scrollable">
+            <div class="container">
+                <div class="setup-wrapper">
+                    <div class="setup-top">
+                        <h1 class="text-center">So, how does
+                            <br />it work?
+                        </h1>
+                    </div>
+                    <div class="setup-main mt-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="setup-item">
+                                    <h1 class="text-center">1</h1>
+                                    <p class="text-center">Set up a Telegram account with your mobile number and look for @SparkyAssistBot.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="setup-item">
+                                    <h1 class="text-center">2</h1>
+                                    <p class="text-center">Select the bot with the specified username and enter "/" to explore a variety of complimentary commands to try.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="setup-item">
+                                    <h1 class="text-center">3</h1>
+                                    <p class="text-center">After selecting your desired command, input /command “task'" and hit enter. Sparky Bot will shortly complete the task assigned to it.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center"><button class="mt-3 btn btn-dark hero-btn px-4 py-2"><img
+                                    src="./assets/img/spark.svg" style="width: 10px;margin-right: 10px;" />Get
+                                Started</button></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section pp-scrollable">
+            <div class="container">
+                <div class="faq-wrapper">
+                    <div class="faq-top">
+                        <h1 class="text-center">Have a question?</h1>
+                        <div class="accordion" id="accordionExample">
+                            <div class="faq-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="./img/home/icons/wallet.svg" class="img-fluid faq-img" alt="">
+                                    </div>
+                                    <div class="d-flex align-items-center w-100">
+                                        <h6 style="flex: 1; font-size: 18px;" class="faq-heading collapsed w-100 mt-1"
+                                            type="button" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            What is Sparky Bot?</h6>
+                                        <div>
+                                            <i class="fa fa-plus-circle" style="margin-left: -20px;"></i>
+                                        </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <p class="mt-2 faq-desc" style="color: #707070">
+                                        Imagine SPARKY Bot as a smart robot friend that can do many tasks for your next big project. It's like having a bunch of tools in one, so you don't need lots of different ones. We made SPARKY using a special computer language called Python along with integrated AI and LLM models to provide you an easy way to perform complicated tasks.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="./img/home/icons/wallet.svg" class="img-fluid faq-img" alt="">
+                                    </div>
+                                    <div class="d-flex align-items-center w-100">
+                                        <h6 style="flex: 1; font-size: 18px;" class="faq-heading collapsed w-100 mt-1"
+                                            type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="true" aria-controls="collapseTwo">
+                                            Is there a cost to using SPARKY Bot?</h6>
+                                        <div>
+                                            <i class="fa fa-plus-circle" style="margin-left: -20px;"></i>
+                                        </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <p class="mt-2 faq-desc" style="color: #707070">
+                                        SPARKY Bot offers a range of free commands for users to test out. For premium features or advanced capabilities, which will be included in Sparky X bot there might be an additional costs which will be decided upon doing a community voting.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="./img/home/icons/wallet.svg" class="img-fluid faq-img" alt="">
+                                    </div>
+                                    <div class="d-flex align-items-center w-100">
+                                        <h6 style="flex: 1; font-size: 18px;" class="faq-heading collapsed w-100 mt-1"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="true" aria-controls="collapseThree">
+                                            How do I start using SPARKY Bot on Telegram?</h6>
+                                        <div>
+                                            <i class="fa fa-plus-circle" style="margin-left: -20px;"></i>
+                                        </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <p class="mt-2 faq-desc" style="color: #707070">
+                                        Create an account on Telegram, search for @SparkyAssistBot, and follow the prompts. You'll be able to use various commands to interact with SPARKY.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="./img/home/icons/wallet.svg" class="img-fluid faq-img" alt="">
+                                    </div>
+                                    <div class="d-flex align-items-center w-100">
+                                        <h6 style="flex: 1; font-size: 18px;" class="faq-heading collapsed w-100 mt-1"
+                                            type="button" data-toggle="collapse" data-target="#collapseFour"
+                                            aria-expanded="true" aria-controls="collapseFour">
+                                            What is the difference between Sparky Bot and Sparky X Bot?</h6>
+                                        <div>
+                                            <i class="fa fa-plus-circle" style="margin-left: -20px;"></i>
+                                        </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <p class="mt-2 faq-desc" style="color: #707070">
+                                        The SPARKY Bot is an AI-powered assistant focusing on daily tasks, turning text into images, and converting written content to audio. On the other hand, the SPARKY X Bot, an advanced version, emphasizes crypto-related tasks like analyzing Ethereum token contracts, helping users invest early in projects, and ensuring organized chat environments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section pp-scrollable d-flex align-items-center justify-content-center">
+            <div class="custom-shape-divider-top-1694030592">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-6 text-center mb-5"><a href="#" style = "color: #fff"><img src="./assets/img/socials/bi_medium.svg"
+                        class="img-fluid mr-2 social-img" /> Medium</a></div>
+                    <div class="col-lg-4 col-6 text-center mb-5"><a href="twitter.com/NovaNetworkerc" style = "color: #fff"><img src="./assets/img/socials/mdi_twitter.svg"
+                        class="img-fluid mr-2 social-img" /> Twitter</a></div>
+                    <div class="col-lg-4 col-6 text-center mb-5"><a href="#" style = "color: #fff"><img src="./assets/img/socials/unicrypt-unc-seeklogo.com 1.svg"
+                        class="img-fluid mr-2 social-img" /> Unicrypt</a></div>
+                    <div class="col-lg-4 col-6 text-center mb-5"><a href="#" style = "color: #fff"><img src="./assets/img/socials/dex.svg"
+                        class="img-fluid mr-2 social-img" /> Dextools</a></div>
+                    <div class="col-lg-4 col-6 text-center mb-5"><a href="t.me/NovaNetworkERC" style = "color: #fff"><img src="./assets/img/socials/tele.svg"
+                        class="img-fluid mr-2 social-img" /> Telegram</a></div>
+                    <div class="col-lg-4 col-6 text-center mb-5"><a href="#" style = "color: #fff"><img src="./assets/img/socials/email.svg"
+                        class="img-fluid mr-2 social-img" /> Email</a></div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery.pagepiling.min.js"></script>
+    <script src="./assets/js/isotope.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#pagepiling').pagepiling({
+                navigation: false
+            });
+        });
+
+        $('.all').click()
+        setTimeout(function () {
+            $('.all').click()
+        }, '1000')
+
+        $('.all-main').click(function () {
+            $('.voice-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $('.articles-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $('.email-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $(this).css({ "background": "linear-gradient(180deg, #1DFF5B 0%, #000000 100%)", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" });
+        })
+        $('.voice-main').click(function () {
+            $('.all-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $('.articles-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $('.email-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $(this).css({ "background": "linear-gradient(180deg, #1DFF5B 0%, #000000 100%)", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" });
+        })
+        $('.articles-main').click(function () {
+            $('.all-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $('.voice-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $('.email-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $(this).css({ "background": "linear-gradient(180deg, #1DFF5B 0%, #000000 100%)", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" });
+        })
+        $('.email-main').click(function () {
+            $('.all-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $('.articles-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $('.voice-main').css({ "background": "#000", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" })
+            $(this).css({ "background": "linear-gradient(180deg, #1DFF5B 0%, #000000 100%)", "height": "100%", "width": "100%", "font-size": "12px", "color": "#fff", "border-radius": "10px" });
+        })
+
+        var $grid = $('.grid').isotope({
+            filter: $('.first'),
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            getSortData: {
+                name: function (element) {
+                    return $(element).text();
+                }
+            }
+        });
+        $('.filter div').on("click", function () {
+            var value = $(this).attr('data-name');
+            $grid.isotope({
+                filter: value
+            });
+            $('.filter div').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        var words = document.getElementsByClassName('word');
+        var wordArray = [];
+        var currentWord = 0;
+
+        words[currentWord].style.opacity = 1;
+        for (var i = 0; i < words.length; i++) {
+            splitLetters(words[i]);
+        }
+
+        function changeWord() {
+            var cw = wordArray[currentWord];
+            var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+            for (var i = 0; i < cw.length; i++) {
+                animateLetterOut(cw, i);
+            }
+
+            for (var i = 0; i < nw.length; i++) {
+                nw[i].className = 'letter behind';
+                nw[0].parentElement.style.opacity = 1;
+                animateLetterIn(nw, i);
+            }
+
+            currentWord = (currentWord == wordArray.length - 1) ? 0 : currentWord + 1;
+        }
+
+        function animateLetterOut(cw, i) {
+            setTimeout(function () {
+                cw[i].className = 'letter out';
+            }, i * 80);
+        }
+
+        function animateLetterIn(nw, i) {
+            setTimeout(function () {
+                nw[i].className = 'letter in';
+            }, 340 + (i * 80));
+        }
+
+        function splitLetters(word) {
+            var content = word.innerHTML;
+            word.innerHTML = '';
+            var letters = [];
+            for (var i = 0; i < content.length; i++) {
+                var letter = document.createElement('span');
+                letter.className = 'letter';
+                letter.innerHTML = content.charAt(i);
+                word.appendChild(letter);
+                letters.push(letter);
+            }
+
+            wordArray.push(letters);
+        }
+
+        changeWord();
+        setInterval(changeWord, 4000);
+
+        $(document).ready(function () {
+            $('.open-menu').on('click', function () {
+                $('.overlay').addClass('open');
+            });
+
+            $('.close-menu').on('click', function () {
+                $('.overlay').removeClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
