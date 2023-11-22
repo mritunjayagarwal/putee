@@ -427,6 +427,7 @@ h6 {
 .tools-wrapper {
     border-radius: 50px;
     border: 2px solid #E5E7EB;
+    background: #000;
     padding: 3em;
 }
 
@@ -436,7 +437,7 @@ h6 {
 }
 
 .tools-item {
-    background: #F5F5F7;
+    background: #1DCC4D;
     border-radius: 40px;
     margin-bottom: 20px;
 }
@@ -446,7 +447,7 @@ h6 {
 }
 
 .tools-item-bottom h1 {
-    color: #1E2227;
+    color: #fff !important;
     text-align: center;
     font-family: Inter;
     font-size: 17px;
@@ -458,7 +459,7 @@ h6 {
 }
 
 .tools-item-bottom p {
-    color: #656F7E;
+    color: #eee;
     text-align: center;
     font-family: Inter;
     font-size: 14px;
@@ -469,7 +470,7 @@ h6 {
 }
 
 .tools-para {
-    color: #656F7E;
+    color: #eee;
     text-align: center;
     font-family: Inter;
     font-size: 18px;
